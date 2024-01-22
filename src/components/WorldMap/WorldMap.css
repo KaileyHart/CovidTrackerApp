@@ -1,0 +1,13 @@
+.map {
+  height: 500px;
+  min-width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-top: 16px;
+  box-shadow: 0 0 8px -4px rgba(0, 0, 0, 0.5);
+
+  .leaflet-container {
+    height: 100%;
+  }
+}

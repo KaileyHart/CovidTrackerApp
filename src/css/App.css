@@ -1,0 +1,101 @@
+.app {
+  padding: 10px;
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+
+  .app__left {
+    min-width: 60%;
+
+    .app__dropdown {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      h1 {
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 3rem;
+      }
+
+      .dropdown {
+        background-color: #fff;
+        height: 100%;
+      }
+    }
+
+    .app__stats {
+      display: flex;
+      justify-content: space-between;
+
+      InfoBox {
+        margin: 10px;
+      }
+
+    }
+  }
+
+  .app__right {
+    min-width: 30%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .app__right-card {
+      margin: 10px;
+
+      h3 {
+        color: rgba(0, 0, 0, 0.6);
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+
+      hr {
+        border-top: 1px solid #f3f2f8;
+      }
+    }
+  }
+}
+
+@media (max-width: 990px) {
+
+  .app {
+    max-width: 900px;
+    flex-direction: column;
+
+    .app__left {
+      .app__dropdown {
+        .dropdown {
+          background-color: none;
+        }
+      }
+    }
+
+    .app__right {
+      margin-top: 20px;
+      width: 425px;
+    }
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .app {
+    max-width: 400px;
+
+    .app__left {
+      .app__dropdown {
+        .dropdown {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .app__right {
+      width: 325px;
+    }
+  }
+
+}
